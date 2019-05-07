@@ -45,8 +45,10 @@ environment:
   ACCOUNT_SID:
     help: |
       Create a Twilio account at https://twilio.com
+    required: true
     type: string
   AUTH_TOKEN:
     help: |
       Create a Twilio account at https://twilio.com
+    required: true
     type: string
