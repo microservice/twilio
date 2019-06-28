@@ -27,7 +27,3 @@ $ omg sms -a to=<PHONE_NUMBER> -a from=<PHONE_NUMBER> -a body=<MESSAGE_BODY> -e 
 
 ## License
 [MIT License](https://github.com/omg-services/twilio/blob/master/LICENSE).
-
-
-## Usage
-
