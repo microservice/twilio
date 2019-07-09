@@ -20,7 +20,7 @@ Curious to [learn more](https://docs.storyscript.io/)?
 
 ##### SMS
 ```shell
-$ omg sms -a to=<PHONE_NUMBER> -a from=<PHONE_NUMBER> -a body=<MESSAGE_BODY> -e ACCOUNT_SID=<ACCOUNT_SID> -e AUTH_TOKEN=<AUTH_TOKEN>
+$ omg run sms -a to=<PHONE_NUMBER> -a from=<PHONE_NUMBER> -a body=<MESSAGE_BODY> -e ACCOUNT_SID=<ACCOUNT_SID> -e AUTH_TOKEN=<AUTH_TOKEN>
 ```
 
 **Note**: The OMG CLI requires [Docker](https://docs.docker.com/install/) to be installed.
