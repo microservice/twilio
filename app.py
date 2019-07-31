@@ -46,10 +46,8 @@ class Handler:
 
 if __name__ == '__main__':
     if os.getenv('ACCOUNT_SID') is None or os.getenv('AUTH_TOKEN') is None:
-        print('Environment variable ACCOUNT_SID/AUTH_TOKEN not found.')
         sys.exit(1)
 
     handler = Handler()
-    handler.app.add_url_rule('/sms', 'sms', handler.sms,
-                             methods=['post'])
+    handler.app.add_url_rule('/sms', 'sms', handler.sms, methods=['post'])
     handler.app.run(host='0.0.0.0', port=8000)
