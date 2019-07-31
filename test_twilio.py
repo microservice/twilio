@@ -3,20 +3,24 @@ import ast
 import json
 
 def test_sms_request(client):
+    fromNumber = os.getenv('FROM_NUMBER_OK')
+    toNumber = os.getenv('TO_NUMBER_OK')
     data = {
         "body": "Hello world !",
-        "from": "+17042456341",
-        "to":  "+917507704328",
+        "from": fromNumber,
+        "to":  toNumber,
     }
     url = "/sms"
     response = client.post(url, json=data)
     assert response.status_code == HTTPStatus.OK
 
 def test_sms_request_fail(client):
+    fromNumber = os.getenv('FROM_NUMBER_INCORRECT')
+    toNumber = os.getenv('TO_NUMBER_INCORRECT')
     data = {
         "body": "Hello world !",
-        "from": "+17042456341",
-        "to":  "+112233445566",
+        "from": fromNumber,
+        "to":  toNumber,
     }
     url = "/sms"
     response = client.post(url, json=data)
