@@ -1,5 +1,6 @@
 from http import HTTPStatus
 import ast
+import os
 import json
 
 def test_sms_request(client):
