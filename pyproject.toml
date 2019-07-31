@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "parampull"
+version = "0.1.0"
+description = ""
+authors = ["Jan Vlcinsky <jan.vlcinsky@tamtamresearch.com>"]
+
+[tool.poetry.dependencies]
+python-dotenv = "^0.10.3"
+pytest = "^5.0"
+pytest-flask = "^0.15.0"
