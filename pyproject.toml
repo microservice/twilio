@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "parampull"
-version = "0.1.0"
+name = "twilio"
+version = "1.0.0"
 description = ""
-authors = ["Jan Vlcinsky <jan.vlcinsky@tamtamresearch.com>"]
+authors = ["Omkar Bhutkar <obhutkar@heaptrace.com>"]
 
 [tool.poetry.dependencies]
 python-dotenv = "^0.10.3"
