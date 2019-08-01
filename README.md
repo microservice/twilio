@@ -1,7 +1,8 @@
 # _Twilio_ OMG Microservice
 
 [![Open Microservice Guide](https://img.shields.io/badge/OMG%20Enabled-👍-green.svg?)](https://microservice.guide)
-<!-- [![Docker Build Status](https://img.shields.io/docker/build/microservices/twilio.svg?style=for-the-badge)](https://hub.docker.com/r/microservices/twilio/) -->
+[![Build Status](https://travis-ci.com/omg-services/uuid.svg?branch=master)](https://travis-ci.com/omg-services/uuid)
+[![codecov](https://codecov.io/gh/omg-services/uuid/branch/master/graph/badge.svg)](https://codecov.io/gh/omg-services/uuid)
 
 This container adds Twilio support in a microservice.
 
