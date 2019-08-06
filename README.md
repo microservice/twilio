@@ -1,8 +1,8 @@
 # _Twilio_ OMG Microservice
 
 [![Open Microservice Guide](https://img.shields.io/badge/OMG%20Enabled-👍-green.svg?)](https://microservice.guide)
-[![Build Status](https://travis-ci.com/omg-services/uuid.svg?branch=master)](https://travis-ci.com/omg-services/uuid)
-[![codecov](https://codecov.io/gh/omg-services/uuid/branch/master/graph/badge.svg)](https://codecov.io/gh/omg-services/uuid)
+[![Build Status](https://travis-ci.com/omg-services/twilio.svg?branch=master)](https://travis-ci.com/omg-services/twilio)
+[![codecov](https://codecov.io/gh/omg-services/twilio/branch/master/graph/badge.svg)](https://codecov.io/gh/omg-services/twilio)
 
 This container adds Twilio support in a microservice.
 
