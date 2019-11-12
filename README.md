@@ -1,30 +1,67 @@
-# _Twilio_ OMG Microservice
+# _Twilio_ Open Microservice
 
-[![Open Microservice Guide](https://img.shields.io/badge/OMG%20Enabled-👍-green.svg?)](https://microservice.guide)
-[![Build Status](https://travis-ci.com/omg-services/twilio.svg?branch=master)](https://travis-ci.com/omg-services/twilio)
-[![codecov](https://codecov.io/gh/omg-services/twilio/branch/master/graph/badge.svg)](https://codecov.io/gh/omg-services/twilio)
+> This is a twilio service
 
-This container adds Twilio support in a microservice.
+[![Open Microservice Specification Version](https://img.shields.io/badge/Open%20Microservice-1.0-477bf3.svg)](https://openmicroservices.org) [![Open Microservices Spectrum Chat](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/open-microservices) [![Open Microservices Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](https://github.com/oms-services/.github/blob/master/CODE_OF_CONDUCT.md) [![Open Microservices Commitzen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-## Direct usage in [Storyscript](https://storyscript.io/):
+## Introduction
 
-##### SMS
-```coffee
-twilio sms to: '+1xxx' from: '+1xxx' body: 'Hello world!'
+This project is an example implementation of the [Open Microservice Specification](https://openmicroservices.org), a standard originally created at [Storyscript](https://storyscript.io) for building highly-portable "microservices" that expose the events, actions, and APIs inside containerized software.
+
+## Getting Started
+
+The `oms` command-line interface allows you to interact with Open Microservices. If you're interested in creating an Open Microservice the CLI also helps validate, test, and debug your `oms.yml` implementation!
+
+See the [oms-cli](https://github.com/microservices/oms) project to learn more!
+
+### Installation
+
+```
+npm install -g @microservices/oms
 ```
 
-Curious to [learn more](https://docs.storyscript.io/)?
+## Usage
 
-✨🍰✨
+### Open Microservices CLI Usage
 
-## Usage with [OMG CLI](https://www.npmjs.com/package/omg)
+Once you have the [oms-cli](https://github.com/microservices/oms) installed, you can run any of the following commands from within this project's root directory:
 
-##### SMS
-```shell
-$ omg run sms -a to=<PHONE_NUMBER> -a from=<PHONE_NUMBER> -a body=<MESSAGE_BODY> -e ACCOUNT_SID=<ACCOUNT_SID> -e AUTH_TOKEN=<AUTH_TOKEN>
+#### Actions
+
+##### sms
+
+> 
+##### Action Arguments
+
+| Argument Name | Type | Required | Default | Description |
+|:------------- |:---- |:-------- |:--------|:----------- |
+| to | `string` | `true` | None | No description provided. |
+| from | `string` | `true` | None | No description provided. |
+| body | `string` | `true` | None | No description provided. |
+| ACCOUNT_SID | `string` | `true` | None | Create a Twilio account at https://twilio.com  |
+| AUTH_TOKEN | `string` | `true` | None | Create a Twilio account at https://twilio.com  |
+
+``` shell
+oms run sms \ 
+    -a to='*****' \ 
+    -a from='*****' \ 
+    -a body='*****' \ 
+    -e ACCOUNT_SID=$ACCOUNT_SID \ 
+    -e AUTH_TOKEN=$AUTH_TOKEN
 ```
 
-**Note**: The OMG CLI requires [Docker](https://docs.docker.com/install/) to be installed.
+## Contributing
 
-## License
-[MIT License](https://github.com/omg-services/twilio/blob/master/LICENSE).
+All suggestions in how to improve the specification and this guide are very welcome. Feel free share your thoughts in the Issue tracker, or even better, fork the repository to implement your own ideas and submit a pull request.
+
+[![Edit twilio on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/oms-services/twilio)
+
+This project is guided by [Contributor Covenant](https://github.com/oms-services/.github/blob/master/CODE_OF_CONDUCT.md). Please read out full [Contribution Guidelines](https://github.com/oms-services/.github/blob/master/CONTRIBUTING.md).
+
+## Additional Resources
+
+* [Install the CLI](https://github.com/microservices/oms) - The OMS CLI helps developers create, test, validate, and build microservices.
+* [Example OMS Services](https://github.com/oms-services) - Examples of OMS-compliant services written in a variety of languages.
+* [Example Language Implementations](https://github.com/microservices) - Find tooling & language implementations in Node, Python, Scala, Java, Clojure.
+* [Storyscript Hub](https://hub.storyscript.io) - A public registry of OMS services.
+* [Community Chat](https://spectrum.chat/open-microservices) - Have ideas? Questions? Join us on Spectrum.
